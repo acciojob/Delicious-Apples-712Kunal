@@ -1,1 +1,145 @@
 /* your code here */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	padding: 20px;
+	gap: 30px;
+	max-width: 900px;
+}
+
+/* LEFT SECTION */
+.product__photo {
+	flex: 1;
+}
+
+.photo-container {
+	position: relative;
+}
+
+.photo-main {
+	background: linear-gradient(to bottom, #b4ec51, #429321);
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+}
+
+.photo-main .controls {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.photo-main img {
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.photo-album ul {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.photo-album ul li {
+	list-style: none;
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.photo-album ul li img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+
+/* RIGHT SECTION */
+.product__info {
+	flex: 1;
+}
+
+.title h1 {
+	margin-bottom: 5px;
+}
+
+.title span {
+	color: gray;
+	font-size: 14px;
+}
+
+.price {
+	margin: 20px 0;
+	font-size: 24px;
+	color: red;
+}
+
+.price span {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.variant h3,
+.description h3 {
+	margin-bottom: 10px;
+}
+
+.variant ul {
+	display: flex;
+	gap: 10px;
+	padding: 0;
+}
+
+.variant ul li {
+	list-style: none;
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.variant ul li img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.description ul {
+	padding-left: 20px;
+	line-height: 1.8;
+}
+
+button {
+	margin-top: 20px;
+	background-color: #ff3f3f;
+	color: white;
+	border: none;
+	padding: 15px 25px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #e62e2e;
+}
